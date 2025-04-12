@@ -13,8 +13,8 @@ import {
   faClock,
   faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import johnMathew from "../../assets/johnMathew.jpeg";
-import sinte from "../../assets/sinte.jpeg";
+// import johnMathew from "../../assets/johnMathew.jpeg";
+// import sinte from "../../assets/sinte.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,7 +112,7 @@ function Hero() {
             <div className="flex items-center space-x-1">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <a
-                href="https://maps.app.goo.gl/VPp9NgjZCtstoxZ28"
+                href="https://g.co/kgs/61LY6A7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
@@ -122,7 +122,7 @@ function Hero() {
             </div>
             <div className="flex items-center space-x-1">
               <FontAwesomeIcon icon={faCalendarAlt} />
-              <span>Date: May 9, 2025 (Friday)</span>
+              <span>Date: May 18, 2025 (Sunday)</span>
             </div>
             <div className="flex items-center space-x-1">
               <FontAwesomeIcon icon={faClock} />
@@ -175,7 +175,7 @@ function Hero() {
       {/* Dignitary section - moved outside the max-w-2xl */}
       <div className="mt-8 w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-stretch gap-6 px-4 z-10">
         {/* Dignitary 1 */}
-        <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
+        {/* <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
           <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
             <img
               src={johnMathew}
@@ -190,10 +190,10 @@ function Hero() {
             DGM & Head of Talent Acquisition & Employee Experience,<br/> V-Guard
             Industries Ltd
           </p>
-        </div>
+        </div> */}
 
         {/* Dignitary 2 */}
-        <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
+        {/* <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
           <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
             <img
               src={sinte}
@@ -209,11 +209,11 @@ function Hero() {
             <br />
             Kadavantra Police Station, Kochi
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-10 mb-10 z-10">
-  <a href="https://forms.gle/jUqeQh2dYrk5aq5u9" target="_blank" rel="noopener noreferrer">
+  <a href="https://forms.gle/QxZFTJKKXCnhyMr26" target="_blank" rel="noopener noreferrer">
     <button className="px-6 py-3 bg-teal-600 text-white text-lg rounded-xl shadow-lg hover:bg-white hover:text-black transition">
       Register Now
     </button>
