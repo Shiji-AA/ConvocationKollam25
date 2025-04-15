@@ -13,8 +13,6 @@ import {
   faClock,
   faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
-// import johnMathew from "../../assets/johnMathew.jpeg";
-// import sinte from "../../assets/sinte.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +63,6 @@ function Hero() {
 
   useGSAP(() => {
     const tl = gsap.timeline();
-
     tl.from(bgRef.current, { scale: 1.3, duration: 2, ease: "power2.out" });
     tl.from(
       heroRef.current,
@@ -88,7 +85,7 @@ function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative w-screen min-h-screen flex flex-col items-center justify-center bg-black overflow-hidden"
+      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-black overflow-hidden"
     >
       <div
         ref={bgRef}
@@ -98,18 +95,23 @@ function Hero() {
         <span className="absolute inset-0 bg-gradient-to-b from-black to-black opacity-80"></span>
       </div>
 
-      <div className="relative w-full max-w-2xl text-center px-6 z-10">
+      <div className="relative w-full max-w-2xl text-center px-4 sm:px-6 z-10">
         <div ref={textRef} className="text-white">
           <div className="flex justify-center">
-            <img src={cnvLogo} alt="CNV Logo" className="w-83 h-52 pt-20" />
+          <img
+  src={cnvLogo}
+  alt="CNV Logo"
+  className="w-56 h-auto sm:w-72 md:w-96 pt-10 mx-auto"
+/>
+
           </div>
 
-          <p className="mt-4 text-lg sm:text-xl md:text-2xl text-white pt-5">
+          <p className="mt-4 text-base sm:text-lg md:text-2xl text-white pt-4 text-center px-2">
             HONOURING BATCHES OF THE YEAR 2024-2025
           </p>
 
-          <div className="mt-2 text-white text-xs md:text-base font-small flex items-center justify-center space-x-4">
-            <div className="flex items-center space-x-1">
+          <div className="mt-4 text-white text-sm sm:text-base font-medium flex flex-col sm:flex-row items-center justify-center gap-2 sm:space-x-4 px-2 text-center">
+            <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <a
                 href="https://g.co/kgs/61LY6A7"
@@ -120,17 +122,17 @@ function Hero() {
                 Location
               </a>
             </div>
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faCalendarAlt} />
               <span>Date: May 18, 2025 (Sunday)</span>
             </div>
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faClock} />
               <span>Time: 3:00 PM</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 lg:space-x-8 pt-8 pb-6 space-y-6 sm:space-y-0">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 pt-8 pb-6 px-4">
             {[
               {
                 icon: faAward,
@@ -151,7 +153,6 @@ function Hero() {
             ].map((item, index) => (
               <div
                 key={index}
-                data-aos="fade-up"
                 className="flex items-center text-left space-x-4"
               >
                 <FontAwesomeIcon icon={item.icon} size="2x" color="white" />
@@ -167,59 +168,20 @@ function Hero() {
               </div>
             ))}
           </div>
-
-    
         </div>
       </div>
 
-      {/* Dignitary section - moved outside the max-w-2xl */}
-      <div className="mt-8 w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-stretch gap-6 px-4 z-10">
-        {/* Dignitary 1 */}
-        {/* <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
-          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
-            <img
-              src={johnMathew}
-              alt="John Mathew Sebastian"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <p className="text-2xl font-semibold text-white mb-2">
-            Mr. John Mathew Sebastian
-          </p>
-          <p className="text-sm md:text-sm text-gray-300 leading-tight">
-            DGM & Head of Talent Acquisition & Employee Experience,<br/> V-Guard
-            Industries Ltd
-          </p>
-        </div> */}
-
-        {/* Dignitary 2 */}
-        {/* <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
-          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
-            <img
-              src={sinte}
-              alt="Sinte P A"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <p className="text-2xl font-semibold text-white mb-2">
-            Mr. Sinte P A
-          </p>
-          <p className="text-sm md:text-sm text-gray-300 leading-tight">
-            Sub Inspector of Police,
-            <br />
-            Kadavantra Police Station, Kochi
-          </p>
-        </div> */}
-      </div>
-
       <div className="mt-10 mb-10 z-10">
-  <a href="https://forms.gle/QxZFTJKKXCnhyMr26" target="_blank" rel="noopener noreferrer">
-    <button className="px-6 py-3 bg-teal-600 text-white text-lg rounded-xl shadow-lg hover:bg-white hover:text-black transition">
-      Register Now
-    </button>
-  </a>
-</div>
-
+        <a
+          href="https://forms.gle/QxZFTJKKXCnhyMr26"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="px-6 py-3 bg-teal-600 text-white text-lg rounded-xl shadow-lg hover:bg-white hover:text-black transition">
+            Register Now
+          </button>
+        </a>
+      </div>
     </section>
   );
 }
