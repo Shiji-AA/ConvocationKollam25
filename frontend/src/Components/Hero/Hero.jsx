@@ -95,43 +95,36 @@ function Hero() {
         <span className="absolute inset-0 bg-gradient-to-b from-black to-black opacity-80"></span>
       </div>
 
-      <div className="mt-20 relative w-full max-w-2xl text-center px-4 sm:px-6 z-10">
+      <div className="mt-5 relative w-full max-w-2xl text-center px-4 sm:px-6 z-10">
         <div ref={textRef} className="text-white">
-          <div className="flex justify-center">
-          <img
-  src={cnvLogo}
-  alt="CNV Logo"
-  className="w-56 h-auto sm:w-72 md:w-96 pt-10 mx-auto"
-/>
+        
 
-          </div>
+        
+        <div className="flex justify-center">
+  <img src={cnvLogo} alt="CNV Logo" className="w-84 h-40 pt-10" />
+</div>
 
           <p className="mt-4 text-base sm:text-lg md:text-2xl text-white pt-4 text-center px-2">
             HONOURING BATCHES OF THE YEAR 2024-2025
           </p>
 
-          <div className="mt-4 text-white text-sm sm:text-base font-medium flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-2 text-center">
-  <div className="flex items-center gap-1">
+
+
+     {/* Location and Date Section */}
+     <div className="mt-2 text-white text-xs md:text-base font-small flex items-center justify-center space-x-4">
+  <div className="flex items-center space-x-1">
     <FontAwesomeIcon icon={faMapMarkerAlt} />
-    <a
-      href="https://g.co/kgs/61LY6A7"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="underline"
-    >
-      Location
-    </a>
+    <a href="https://g.co/kgs/61LY6A7" target="_blank" rel="noopener noreferrer" className="underline">Location</a>
   </div>
-  <div className="flex items-center gap-1">
+  <div className="flex items-center space-x-1">
     <FontAwesomeIcon icon={faCalendarAlt} />
     <span>Date: May 18, 2025 (Sunday)</span>
   </div>
-  <div className="flex items-center gap-1">
+  <div className="flex items-center space-x-1">
     <FontAwesomeIcon icon={faClock} />
     <span>Time: 3:00 PM</span>
   </div>
 </div>
-
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 pt-8 pb-6 px-4">
             {[
