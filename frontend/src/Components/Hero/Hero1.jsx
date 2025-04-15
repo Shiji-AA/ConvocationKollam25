@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import architect from "../../assets/image1.jpg";
 import hr from "../../assets/image2.jpg";
 import edu from "../../assets/image3.jpg";
-import edu1 from "../../assets/image5.jpg";
+import edu1 from "../../assets/image5.jpeg";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
