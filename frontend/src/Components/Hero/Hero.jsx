@@ -95,14 +95,19 @@ function Hero() {
         <span className="absolute inset-0 bg-gradient-to-b from-black to-black opacity-80"></span>
       </div>
 
-      <div className="mt-5 relative w-full max-w-2xl text-center px-4 sm:px-6 z-10">
+      <div className="mt-10 relative w-full max-w-2xl text-center px-4 sm:px-6 z-10">
         <div ref={textRef} className="text-white">
         
 
-        
-        <div className="flex justify-center">
-  <img src={cnvLogo} alt="CNV Logo" className="w-84 h-40 pt-10" />
+        <div className="flex justify-center mt-8 sm:mt-6 px-4">
+  <img
+    src={cnvLogo}
+    alt="CNV Logo"
+    className="w-56 sm:w-64 md:w-80 lg:w-96 h-auto"
+  />
 </div>
+
+
 
           <p className="mt-4 text-base sm:text-lg md:text-2xl text-white pt-4 text-center px-2">
             HONOURING BATCHES OF THE YEAR 2024-2025
