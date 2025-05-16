@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import sunand from "../../assets/sunand.jpg";
+import guest from '../../assets/guest2.jpg'
 import {
   faAward,
   faUserGraduate,
@@ -169,6 +171,47 @@ function Hero() {
           </div>
         </div>
       </div>
+
+
+{/* Dignitary section - moved outside the max-w-2xl */}
+<div className="mt-8 w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-stretch gap-6 px-4 z-10">
+        {/* Dignitary 1 */}
+        <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
+          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
+            <img
+              src={sunand}
+              alt="John Mathew Sebastian"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+          <p className="text-2xl font-semibold text-white mb-2">
+            Mr. Sunand K Pillai
+          </p>
+          <p className="text-sm md:text-sm text-gray-300 leading-tight">
+            Director,<br/> Bullswag Builders India Pvt Ltd
+          </p>
+        </div> 
+
+        {/* Dignitary 2 */}
+         <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
+          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
+            <img
+              src={guest}
+              alt="guest"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+          <p className="text-2xl font-semibold text-white mb-2">
+            Dr.Gouri Mohan L
+          </p>
+          <p className="text-sm md:text-sm text-gray-300 leading-tight">
+            Principal,
+            <br />
+            TKM INSTITUTE OF TECHNOLOGY, KARUVELIL
+          </p>
+        </div> 
+      </div>
+
 
       <div className="mt-10 mb-10 z-10">
         <a
