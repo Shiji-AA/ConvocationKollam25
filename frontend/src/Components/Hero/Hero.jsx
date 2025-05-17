@@ -6,7 +6,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import sunand from "../../assets/sunand.jpg";
-import guest from '../../assets/guest2.jpg'
+import guest from '../../assets/guest2.jpg';
+import vishnunath from '../../assets/vishnunath.jpg'
 import {
   faAward,
   faUserGraduate,
@@ -174,43 +175,65 @@ function Hero() {
 
 
 {/* Dignitary section - moved outside the max-w-2xl */}
-<div className="mt-8 w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-stretch gap-6 px-4 z-10">
-        {/* Dignitary 1 */}
-        <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
-          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
-            <img
-              src={sunand}
-              alt="John Mathew Sebastian"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <p className="text-2xl font-semibold text-white mb-2">
-            Mr. Sunand K Pillai
-          </p>
-          <p className="text-sm md:text-sm text-gray-300 leading-tight">
-            Director,<br/> Bullswag Builders India Pvt Ltd
-          </p>
-        </div> 
+{/* Dignitary Section */}
+<div className="mt-16 px-4 z-10 w-full max-w-6xl mx-auto text-center flex flex-col items-center">
+  {/* Chief Guest */}
+  <div className="bg-white/10 p-6 rounded-3xl shadow-2xl w-full sm:w-2/3 lg:w-1/2 hover:scale-105 transition-transform duration-300">
+    <div className="w-36 h-36 sm:w-40 sm:h-40 rounded-full mx-auto mb-4 border-4 border-white shadow-lg p-1 bg-gray-900/50 overflow-hidden">
+      <img
+        src={vishnunath}
+        alt="Mr. P. C. Vishnunadh"
+        className="w-full h-full object-cover rounded-full"
+      />
+    </div>
+    <p className="text-2xl sm:text-3xl font-bold text-white mb-2">
+      Mr. P. C. Vishnunadh
+    </p>
+    <p className="text-sm md:text-base text-gray-300 leading-tight">
+      Chief Guest<br />Member of the Kerala Legislative Assembly
+    </p>
+  </div>
 
-        {/* Dignitary 2 */}
-         <div className="flex-1 bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center transition-transform duration-300 hover:scale-105">
-          <div className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
-            <img
-              src={guest}
-              alt="guest"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <p className="text-2xl font-semibold text-white mb-2">
-            Dr.Gouri Mohan L
-          </p>
-          <p className="text-sm md:text-sm text-gray-300 leading-tight">
-            Principal,
-            <br />
-            TKM INSTITUTE OF TECHNOLOGY, KARUVELIL
-          </p>
-        </div> 
+  {/* Other Guests */}
+  <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+    {/* Guest 1 */}
+    <div className="bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-transform duration-300">
+      <div className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
+        <img
+          src={sunand}
+          alt="Mr. Sunand K Pillai"
+          className="w-full h-full object-cover rounded-full"
+        />
       </div>
+      <p className="text-2xl font-semibold text-white mb-2">
+        Mr. Sunand K Pillai
+      </p>
+      <p className="text-sm text-gray-300 leading-tight">
+        Director,<br />
+        Bullswag Builders India Pvt Ltd
+      </p>
+    </div>
+
+    {/* Guest 2 */}
+    <div className="bg-white/10 p-6 sm:p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-transform duration-300">
+      <div className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-md p-1 bg-gray-900/50 overflow-hidden">
+        <img
+          src={guest}
+          alt="Dr. Gouri Mohan L"
+          className="w-full h-full object-cover rounded-full"
+        />
+      </div>
+      <p className="text-2xl font-semibold text-white mb-2">
+        Dr. Gouri Mohan L
+      </p>
+      <p className="text-sm text-gray-300 leading-tight">
+        Principal,<br />
+        TKM Institute of Technology, Karuvelil
+      </p>
+    </div>
+  </div>
+</div>
+
 
 
       <div className="mt-10 mb-10 z-10">
