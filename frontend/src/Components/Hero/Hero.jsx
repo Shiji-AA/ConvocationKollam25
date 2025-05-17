@@ -190,7 +190,7 @@ function Hero() {
       Mr. P. C. Vishnunadh
     </p>
     <p className="text-sm md:text-base text-gray-300 leading-tight">
-      Chief Guest<br />Member of the Kerala Legislative Assembly
+      Chief Guest<br />Member of the Kerala Legislative Assembly, Kundara
     </p>
   </div>
 
